@@ -9,16 +9,12 @@ export class NumberRandomizerComponent {
 
   currentNum = 0
 
-  increment() {
-    this.currentNum += Math.floor(Math.random() * 100)
-  }
+  increment = () => this.currentNum += this.rand()
+  
+  decrement = () => this.currentNum -= this.rand() 
 
-  decrement() {
-    this.currentNum -= Math.floor(Math.random() * 100)
-  }
+  rand = () => Math.floor(Math.random() * 10) + 1
 
-  reset() {
-    this.currentNum = 0
-  }
+  reset = () => this.currentNum = 0
 
 }
