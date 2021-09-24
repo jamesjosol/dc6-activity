@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="card">
+            <div class="card-body">
+                
+                <div class="alert alert-info float-btn-con">
+                    <div class="floating-btn">
+                        <button class="btn btn-outline-primary rounded-circle btn-reset" (click)="reset()"><i class="fas fa-sync-alt"></i></button>
+                    </div>
+                    <h3>{{ currentNum }}</h3>
+                </div>
+        
+                <div class="btn-con">
+                    <button class="btn btn-outline-primary btn-space" (click)="increment()">
+                        <i class="far fa-plus-square"></i> Increment
+                    </button>
+            
+                    <button class="btn btn-outline-danger" (click)="decrement()">
+                        <i class="far fa-minus-square"></i> Decrement
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
